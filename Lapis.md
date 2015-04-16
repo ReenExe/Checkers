@@ -5,3 +5,6 @@
     sudo apt-get install luarocks
     sudo luarocks install lapis
 ```
+
+# Sources:
+* http://openresty.org/

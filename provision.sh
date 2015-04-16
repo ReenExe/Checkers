@@ -9,9 +9,8 @@ export DEBIAN_FRONTEND=noninteractive
 sudo aptitude update -q
 
 # OpenResty -> LuaRocks -> Lapis
-sudo aptitude install -q -y -f openresty luarocks
+sudo aptitude install -q -y -f libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make
 
-# for success install Lapis need libssl
-sudo aptitude install -q -y -f libssl-dev
+sudo aptitude install -q -y -f luarocks
 
 sudo luarocks install lapis
