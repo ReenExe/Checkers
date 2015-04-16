@@ -8,3 +8,4 @@
 
 # Sources:
 * http://openresty.org/
+* http://habrahabr.ru/post/240217/

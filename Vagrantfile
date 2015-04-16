@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.gui = false
 
     v.cpus = "2"
-    v.name = "ubuntu_pgh.box"
+    v.name = "ubuntu_checkers.box"
     v.customize ["modifyvm", :id, "--memory",               "512"]
     v.customize ["modifyvm", :id, "--cpuexecutioncap",      "95"]
     v.customize ["modifyvm", :id, "--natdnshostresolver1",  "on"]
@@ -26,4 +26,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   config.vm.provision :shell, path: "provision.sh"
+
+  config.vm.provision :shell, :inline => <<-EOT
+       echo 'LC_ALL="en_US.UTF-8"'  >  /etc/default/locale
+  EOT
 end
