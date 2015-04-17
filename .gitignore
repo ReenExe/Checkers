@@ -2,3 +2,4 @@
 .vagrant/
 logs/
 static/vendor/
+platform/node_modules/

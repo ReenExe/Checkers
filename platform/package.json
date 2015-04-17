@@ -1,0 +1,14 @@
+{
+  "name": "platform",
+  "version": "0.0.1",
+  "description": "bridge between players",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "ReenExe",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.12.3"
+  }
+}

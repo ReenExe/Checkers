@@ -23,3 +23,5 @@ cd ngx_openresty-1.7.10.1/
 ./configure
 make
 make install
+
+sudo apt-get install -q -y -f nodejs npm
