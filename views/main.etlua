@@ -3,6 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Checkers</title>
+
+    <script src="http://requirejs.org/docs/release/2.1.16/comments/require.js" data-main="js/app.js"></script>
 </head>
 <body>
     Simple template
