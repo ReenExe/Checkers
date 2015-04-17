@@ -23,3 +23,6 @@ cd ngx_openresty-1.7.10.1/
 ./configure
 make
 make install
+
+ln -sv /var/www/checkers/nginx.conf nginx.conf
+lapis server
