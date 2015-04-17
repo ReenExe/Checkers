@@ -25,4 +25,5 @@ make
 make install
 
 ln -sv /var/www/checkers/nginx.conf nginx.conf
+ln -sv /var/www/checkers/mime.types mime.types
 lapis server
