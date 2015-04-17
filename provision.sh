@@ -23,7 +23,3 @@ cd ngx_openresty-1.7.10.1/
 ./configure
 make
 make install
-
-ln -sv /var/www/checkers/nginx.conf nginx.conf
-ln -sv /var/www/checkers/mime.types mime.types
-lapis server
