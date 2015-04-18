@@ -1,7 +1,10 @@
 define([
     'jquery',
     'underscore',
-    'backbone'
-], function ($, _, Backbone) {
-    console.log('complete');
+    'backbone',
+    'socket.io'
+], function ($, _, Backbone, io) {
+    var socket = io('http://checkers.lua:8000/');
+
+    socket.on('connected', console.log);
 });

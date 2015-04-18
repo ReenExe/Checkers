@@ -3,7 +3,8 @@ require.config({
     paths: {
         "jquery": "/static/vendor/jquery",
         "underscore": "/static/vendor/underscore",
-        "backbone": "/static/vendor/backbone"
+        "backbone": "/static/vendor/backbone",
+        "socket.io": "/static/vendor/socket.io"
     },
 
     shim: {
@@ -16,6 +17,9 @@ require.config({
         "backbone": {
             deps: ["underscore", "jquery"],
             exports: "Backbone"
+        },
+        "socket.io": {
+            exports: "io"
         }
     },
 
