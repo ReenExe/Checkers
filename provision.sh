@@ -25,3 +25,7 @@ make
 make install
 
 sudo apt-get install -q -y -f nodejs npm
+
+# Python Django http://blog.smalleycreative.com/tutorials/setup-a-django-vm-with-vagrant-virtualbox-and-chef/
+sudo apt-get install -q -y -f python-pip
+sudo pip install django
