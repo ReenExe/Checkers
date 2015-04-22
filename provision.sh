@@ -26,6 +26,6 @@ make install
 
 sudo apt-get install -q -y -f nodejs npm
 
-# Python Django http://blog.smalleycreative.com/tutorials/setup-a-django-vm-with-vagrant-virtualbox-and-chef/
+# Python Flask http://flask.pocoo.org/
 sudo apt-get install -q -y -f python-pip
-sudo pip install django
+sudo pip install Flask
