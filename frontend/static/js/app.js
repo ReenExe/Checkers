@@ -24,5 +24,5 @@ require.config({
     },
 
     // запустить приложение
-    deps: ['./main']
+    deps: [requireApp]
 });

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="static/css/tic-tac.css"/>
+    <script type="text/javascript">
+        var requireApp = './tic-tac';
+    </script>
+    <script src="static/vendor/require.js" data-main="static/js/app.js"></script>
+</head>
+<body>
+    Tic-tac-toe
+    <div id="js-tic-tac-block"></div>
+</body>
+</html>

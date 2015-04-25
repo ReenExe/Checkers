@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Checkers</title>
 
+    <script type="text/javascript">
+        var requireApp = './main';
+    </script>
     <script src="static/vendor/require.js" data-main="static/js/app.js"></script>
 </head>
 <body>
