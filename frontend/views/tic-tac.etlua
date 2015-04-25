@@ -2,14 +2,14 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Checkers</title>
+    <title>Tic-tac-toe</title>
 
     <script type="text/javascript">
-        var requireApp = './main';
+        var requireApp = './tic-tac';
     </script>
     <script src="static/vendor/require.js" data-main="static/js/app.js"></script>
 </head>
 <body>
-    Simple template
+    Tic-tac-toe
 </body>
 </html>
