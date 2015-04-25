@@ -80,6 +80,8 @@ define([
 
                     $block.append($choosesView);
                 });
+
+                socket.on('tic-tac:partner:connect', console.log)
             }
         };
     })();

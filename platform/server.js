@@ -8,6 +8,7 @@ var app = require('express')();
 var http = require('http');
 var server = http.Server(app);
 var io = require('socket.io')(server);
+var request = require('request');
 
 app.get('/', function (req, res) {
     res.send('Platform Side Api');
@@ -51,7 +52,11 @@ io.sockets.on('connection', function(socket) {
 
         socket.on('tic-tac:choose:set', function(choosed) {
             if (CHOOSES[choosed]) {
-                return setPlayerChoose(choosed);
+                setPlayerChoose(choosed);
+
+                return request.get('http://127.0.0.1:5000/start', function(error, response, body) {
+                    socket.emit('tic-tac:partner:connect', body)
+                });
             }
 
             socket.emit('tic-tac:choose', CHOOSES);

@@ -1,12 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
-# from `Vagrantfile`
-host = "192.168.50.4"
-
-@app.route("/")
+@app.route('/start')
 def start():
-    return "First Checkers Player"
+    return 'Flask Checkers Player'
 
 if __name__ == '__main__':
-    app.run(host)
+    app.run()
