@@ -18,7 +18,7 @@ define([
     var Game = (function() {
         var socket = getConnection();
 
-        var board = {};
+        var boardMap = {};
 
         var $block = $('#js-tic-tac-block');
 
@@ -57,7 +57,11 @@ define([
                 var $row = $('<tr></tr>');
 
                 for (var y = 1; y <= 3; y++) {
-                    board[index++] = $row.append('<td></td>')
+                    var $cell = $('<td></td>');
+
+                    boardMap[index++] = $cell;
+
+                    $row.append($cell);
                 }
 
                 $table.append($row)
@@ -68,10 +72,6 @@ define([
 
         var showBoardView = function() {
             var $board = getTicTacBoardView();
-
-            $board.delegate('td', 'click', function() {
-                $(this).html(player.me)
-            });
 
             $block.html($board);
         };
@@ -93,6 +93,10 @@ define([
             };
         };
 
+        var partnerStep = function(step) {
+            boardMap[step].html(player.partner);
+        };
+
         return {
             start: function() {
                 socket.emit('tic-tac:start');
@@ -109,6 +113,8 @@ define([
 
                     $block.append($choosesView);
                 });
+
+                socket.on('tic-tac:step', partnerStep);
 
                 socket.on('tic-tac:partner:connect', console.log)
             }

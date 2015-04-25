@@ -56,6 +56,8 @@ io.sockets.on('connection', function(socket) {
 
                 return request.get('http://127.0.0.1:5000/start', function(error, response, body) {
                     socket.emit('tic-tac:partner:connect', body)
+
+                    socket.emit('tic-tac:step', 7)
                 });
             }
 
