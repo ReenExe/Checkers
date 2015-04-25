@@ -66,6 +66,33 @@ define([
             return $table;
         };
 
+        var showBoardView = function() {
+            var $board = getTicTacBoardView();
+
+            $board.delegate('td', 'click', function() {
+                $(this).html(player.me)
+            });
+
+            $block.html($board);
+        };
+
+        var player;
+
+        var getOtherChoose = function(inChoose, chooses) {
+            for (var choose in chooses) {
+                if (choose == inChoose) continue;
+
+                return choose;
+            }
+        };
+
+        var setPlayerMark = function(me, chooses) {
+            player = {
+                me: me,
+                partner: getOtherChoose(me, chooses)
+            };
+        };
+
         return {
             start: function() {
                 socket.emit('tic-tac:start');
@@ -75,7 +102,9 @@ define([
                     var $choosesView = getChoosesView(chooses, function(choose) {
                         socket.emit('tic-tac:choose:set', choose);
 
-                        $block.html(getTicTacBoardView());
+                        setPlayerMark(choose, chooses);
+
+                        showBoardView();
                     });
 
                     $block.append($choosesView);
