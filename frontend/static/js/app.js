@@ -1,10 +1,10 @@
 require.config({
 
     paths: {
-        "jquery": "/static/vendor/jquery",
-        "underscore": "/static/vendor/underscore",
-        "backbone": "/static/vendor/backbone",
-        "socket.io": "/static/vendor/socket.io"
+        "jquery": "/frontend/static/vendor/jquery",
+        "underscore": "/frontend/static/vendor/underscore",
+        "backbone": "/frontend/static/vendor/backbone",
+        "socket.io": "/frontend/static/vendor/socket.io"
     },
 
     shim: {

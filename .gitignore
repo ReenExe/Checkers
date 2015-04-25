@@ -1,5 +1,5 @@
 .idea/
 .vagrant/
 logs/
-static/vendor/
+frontend/static/vendor/
 platform/node_modules/
