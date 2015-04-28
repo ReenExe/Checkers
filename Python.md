@@ -4,5 +4,6 @@
 ** [progress: 169 from 406]
 ** [progress: 194 from 406]
 ** [progress: 260 from 406]
+** [progress: 289 from 406]
 * Learn Python Django From Scratch (udemy.com)
 * http://flask.pocoo.org/
