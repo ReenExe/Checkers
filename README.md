@@ -1,5 +1,7 @@
 # Checkers
 
+[![Build Status](https://travis-ci.org/ReenExe/Checkers.svg)](https://travis-ci.org/ReenExe/Checkers)
+
 TODO:
 Створити платформу для гри в шашки
 * Відображення з використанням Lapis (Front) для першого гравця
