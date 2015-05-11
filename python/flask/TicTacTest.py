@@ -1,5 +1,5 @@
 import unittest
-from tictac import TicTacGame
+from tictac import TicTacGame, TicTacPriority
 
 class TicTacTest(unittest.TestCase):
 
@@ -14,5 +14,10 @@ class TicTacTest(unittest.TestCase):
 
         self.assertEqual(players['first'].choose, 'X')
         self.assertEqual(players['second'].choose, '0')
+
+    def testStep(self):
+        player = TicTacGame('X')
+        step = player.start()
+        self.assertTrue(step in TicTacPriority.MAP)
 
 unittest.main()
