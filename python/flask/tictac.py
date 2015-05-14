@@ -5,25 +5,40 @@ class TicTacPriority(object):
     # 6 7 8
     MAP = (4, 1, 2, 5, 8, 7, 6, 3, 0)
 
+class TicTacTurn(object):
+    def __init__(self, value, win = None):
+        self.value = value
+        self.win = win
+
 class TicTacGame(object):
     CHOOSES = ('X', '0')
+    __REVERSE = {
+        'X': '0',
+        '0': 'X',
+    }
     def __init__(self, choose):
         self.choose = choose
-        self.history = []
+        self.partner = self.__REVERSE[choose]
+        self.desc = {}
         self.__start()
-    def start(self):
-        if (self.__beginner()):
-            return self.history[0]
+
+    def lastSelfTurn(self):
+        return self.__lastSelfTurn
 
     def turn(self, value):
         success = value in TicTacPriority.MAP
         if (success):
-            self.history.append(value)
+            self.desc[value] = self.partner
         return success
+
+    def __selfTurn(self, value):
+        self.desc[value] = self.choose
+
+        self.__lastSelfTurn = TicTacTurn(value)
 
     def __start(self):
         if (self.__beginner()):
-            self.turn(TicTacPriority.MAP[0])
+            self.__selfTurn(TicTacPriority.MAP[0])
 
     def __beginner(self):
         return self.choose == 'X'

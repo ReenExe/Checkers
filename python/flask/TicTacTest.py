@@ -14,18 +14,18 @@ class TicTacTest(unittest.TestCase):
     def testBeginnerStep(self):
         player = TicTacGame('X')
 
-        step = player.start()
-        self.assertTrue(step in TicTacPriority.MAP)
+        turn = player.lastSelfTurn()
+        self.assertTrue(turn.value in TicTacPriority.MAP)
 
-        stepCopy = player.start()
-        self.assertEqual(stepCopy, step)
+        turnCopy = player.lastSelfTurn()
+        self.assertEqual(turnCopy, turn)
 
     def testPartnerStep(self):
         beginner = TicTacGame('X')
         partner = TicTacGame('0')
 
-        step = beginner.start()
+        turn = beginner.lastSelfTurn()
 
-        partner.turn(step);
+        partner.turn(turn.value);
 
 unittest.main()
