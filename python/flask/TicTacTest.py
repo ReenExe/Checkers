@@ -19,9 +19,13 @@ class TicTacTest(unittest.TestCase):
 
         stepCopy = player.start()
         self.assertEqual(stepCopy, step)
-    #
-    # def testPartnerStep(self):
-    #     beginner = TicTacGame('X')
-    #     partner = TicTacGame('0')
+
+    def testPartnerStep(self):
+        beginner = TicTacGame('X')
+        partner = TicTacGame('0')
+
+        step = beginner.start()
+
+        partner.turn(step);
 
 unittest.main()
