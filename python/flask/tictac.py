@@ -15,9 +15,15 @@ class TicTacGame(object):
         if (self.__beginner()):
             return self.history[0]
 
+    def turn(self, value):
+        success = value in TicTacPriority.MAP
+        if (success):
+            self.history.append(value)
+        return success
+
     def __start(self):
         if (self.__beginner()):
-            self.history.append(TicTacPriority.MAP[0])
+            self.turn(TicTacPriority.MAP[0])
 
     def __beginner(self):
         return self.choose == 'X'
