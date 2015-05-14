@@ -23,8 +23,9 @@ class TicTacGame(object):
     @staticmethod
     def getWinner(desc):
         for combination in TicTacGame.COMBINATION:
-            if desc.get(combination[0]) == desc.get(combination[1]) == desc.get(combination[2]):
-                return desc.get(combination[1])
+            if combination[0] in desc and combination[1] in desc and combination[2] in desc:
+                if desc[combination[0]] == desc[combination[1]] == desc[combination[2]]:
+                    return desc.get(combination[1])
 
 
 class TicTacTurn(object):
