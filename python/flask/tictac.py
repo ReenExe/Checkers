@@ -10,12 +10,14 @@ class TicTacGame(object):
     def __init__(self, choose):
         self.choose = choose
         self.history = []
-        self.start()
+        self.__start()
     def start(self):
-        if (self.choose == 'X'):
-            step = TicTacPriority.MAP[0]
+        if (self.__beginner()):
+            return self.history[0]
 
-            if (len(self.history) == 0):
-                self.history.append(step)
+    def __start(self):
+        if (self.__beginner()):
+            self.history.append(TicTacPriority.MAP[0])
 
-            return step
+    def __beginner(self):
+        return self.choose == 'X'
