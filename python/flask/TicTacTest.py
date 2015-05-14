@@ -1,28 +1,29 @@
 import unittest
 # pip install unittest-data-provider
 from unittest_data_provider import data_provider
-from tictac import TicTacGame, TicTacPriority
+from tictac import TicTacPlayer, TicTacPriority
 
 class TicTacTest(unittest.TestCase):
     chooses = lambda: (('X'),('0'))
 
     @data_provider(chooses)
     def testGame(self, choose):
-        player = TicTacGame(choose)
+        player = TicTacPlayer(choose)
         self.assertEqual(player.choose, choose)
 
     def testBeginnerStep(self):
-        player = TicTacGame('X')
+        player = TicTacPlayer('X')
 
         turn = player.lastSelfTurn()
-        self.assertTrue(turn.value in TicTacPriority.MAP)
+        self.assertTrue(turn.value in TicTacPriority.SEQUENCE)
+        self.assertTrue(turn.winner == None)
 
         turnCopy = player.lastSelfTurn()
         self.assertEqual(turnCopy, turn)
 
     def testPartnerStep(self):
-        beginner = TicTacGame('X')
-        partner = TicTacGame('0')
+        beginner = TicTacPlayer('X')
+        partner = TicTacPlayer('0')
 
         turn = beginner.lastSelfTurn()
 
