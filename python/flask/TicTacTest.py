@@ -27,6 +27,12 @@ class TicTacTest(unittest.TestCase):
 
         turn = beginner.lastSelfTurn()
 
-        partner.turn(turn.value);
+        self.assertEqual(beginner.turn(turn.value), None)
+
+        partner.turn(turn.value)
+
+        turn = partner.lastSelfTurn()
+
+        self.assertTrue(turn.value in TicTacPriority.SEQUENCE)
 
 unittest.main()

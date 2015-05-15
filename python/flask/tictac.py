@@ -27,6 +27,22 @@ class TicTacGame(object):
                 if desc[combination[0]] == desc[combination[1]] == desc[combination[2]]:
                     return desc.get(combination[1])
 
+class TicTacLogic(object):
+    def __init__(self, desc):
+        self.desc = desc
+
+    def getNextTurn(self):
+        return
+
+class TicTacSequenceLogic(TicTacLogic):
+    def getNextTurn(self):
+        possible = set(TicTacPriority.SEQUENCE).difference(self.desc.keys())
+        if (len(possible)):
+            return list(possible)[0]
+
+class TicTacInterceptLogic(TicTacLogic):
+    def getNextTurn(self):
+        return
 
 class TicTacTurn(object):
     def __init__(self, value, winner = None):
@@ -44,15 +60,22 @@ class TicTacPlayer(object):
         self.__partner = self.__REVERSE[choose]
         self.__desc = {}
         self.__start()
+        self.__logic = TicTacSequenceLogic(self.__desc)
 
     def lastSelfTurn(self):
         return self.__lastSelfTurn
 
     def turn(self, value):
-        success = value in TicTacPriority.SEQUENCE
-        if (success):
+        if (self.__possible(value)):
             self.__desc[value] = self.__partner
-        return success
+
+            if TicTacGame.getWinner(self.__desc):
+                return True
+
+            self.__selfTurn(self.__logic.getNextTurn())
+
+    def __possible(self, value):
+        return value in TicTacPriority.SEQUENCE and value not in self.__desc
 
     def __selfTurn(self, value):
         self.__desc[value] = self.choose
