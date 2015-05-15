@@ -25,14 +25,18 @@ class TicTacTest(unittest.TestCase):
         beginner = TicTacPlayer('X')
         partner = TicTacPlayer('0')
 
-        turn = beginner.lastSelfTurn()
+        self.assertEqual(beginner.turn(beginner.lastSelfTurn().value), None)
 
-        self.assertEqual(beginner.turn(turn.value), None)
+        for i in range(0, 8):
+            if beginner.lastSelfTurn() == True: break
+            partner.turn(beginner.lastSelfTurn().value)
+            self.assertTrue(beginner.lastSelfTurn().value in TicTacPriority.SEQUENCE)
 
-        partner.turn(turn.value)
+            if partner.lastSelfTurn() == True: break
+            beginner.turn(partner.lastSelfTurn().value)
+            self.assertTrue(partner.lastSelfTurn().value in TicTacPriority.SEQUENCE)
 
-        turn = partner.lastSelfTurn()
+        self.assertEqual(beginner.lastSelfTurn().winner, partner.lastSelfTurn().winner)
 
-        self.assertTrue(turn.value in TicTacPriority.SEQUENCE)
 
 unittest.main()

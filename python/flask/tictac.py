@@ -31,6 +31,9 @@ class TicTacLogic(object):
     def __init__(self, desc):
         self.desc = desc
 
+    def isFinish(self):
+        return len(TicTacPriority.SEQUENCE) == len(self.desc)
+
     def getNextTurn(self):
         return
 
@@ -69,7 +72,7 @@ class TicTacPlayer(object):
         if (self.__possible(value)):
             self.__desc[value] = self.__partner
 
-            if TicTacGame.getWinner(self.__desc):
+            if TicTacGame.getWinner(self.__desc) or self.__logic.isFinish():
                 return True
 
             self.__selfTurn(self.__logic.getNextTurn())
