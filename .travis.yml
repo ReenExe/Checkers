@@ -5,4 +5,5 @@ python:
   - 3.2
   - 3.3
   - 3.4
-script: "./travis.sh"
+script:
+  - python python/flask/TicTacTest.py
