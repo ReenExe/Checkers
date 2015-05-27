@@ -1,1 +1,12 @@
-.python.travis.yml
+language:
+  - python
+python:
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
+  - 3.4
+install:
+  - pip install unittest-data-provider
+script:
+  - python python/flask/TicTacTest.py
