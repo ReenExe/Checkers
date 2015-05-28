@@ -7,9 +7,13 @@ python:
   - 3.2
   - 3.3
   - 3.4
+ghc:
+  - 7.8
 install:
   - pip install unittest-data-provider
   - cabal install hspec
 script:
   - python python/flask/TicTacTest.py
   - runhaskell haskell/TicTacTest.hs
+notifications:
+  email: false
