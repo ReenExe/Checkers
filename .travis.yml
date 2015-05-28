@@ -11,6 +11,7 @@ ghc:
   - 7.8
 install:
   - pip install unittest-data-provider
+  - sudo apt-get install haskell-platform
   - cabal install hspec
 script:
   - python python/flask/TicTacTest.py
