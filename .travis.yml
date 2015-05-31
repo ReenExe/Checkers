@@ -9,6 +9,7 @@ python:
   - 3.4
 ghc:
   - 7.8
+  - 7.7
 install:
   - pip install unittest-data-provider
   - sudo apt-get install cabal-install
