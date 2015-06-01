@@ -7,5 +7,6 @@
 ### Изучай Haskell во имя добра! (2012)
 * [progress: 38 from 492]
 * [progress: 76 from 492]
+* [progress: 131 from 492]
 
 ### TDD: http://hspec.github.io/
