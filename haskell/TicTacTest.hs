@@ -3,6 +3,7 @@
 import Test.Hspec
 import Test.QuickCheck
 import Control.Exception (evaluate)
+import TicTac
 
 main :: IO ()
 main = hspec $ do
