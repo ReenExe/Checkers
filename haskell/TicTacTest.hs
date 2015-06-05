@@ -9,4 +9,6 @@ main :: IO ()
 main = hspec $ do
   describe "Some Test" $ do
     it "Some Action" $ do
-      head [1 ..] `shouldBe` (1 :: Int)
+      TicTac.isExistChoose "X" `shouldBe` (True :: Bool)
+      TicTac.isExistChoose "0" `shouldBe` (True :: Bool)
+      TicTac.isExistChoose "1" `shouldBe` (False :: Bool)
