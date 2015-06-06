@@ -1,5 +1,5 @@
 # All
-### Принципы, паттерны и методики гибкой разработки на языке C#
+### Принципы, паттерны и методики гибкой разработки на языке C&#35
 * [progress: 388 from 759]
 * [progress: 406 from 759]
 * [progress: 425 from 759]
@@ -13,3 +13,4 @@
 * [progress: 56 from 306]
 * [progress: 71 from 306]
 * [progress: 86 from 306]
+* [progress: 135 from 306]
