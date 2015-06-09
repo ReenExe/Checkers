@@ -3,3 +3,4 @@
 logs/
 frontend/static/vendor/
 platform/node_modules/
+*.pyc
