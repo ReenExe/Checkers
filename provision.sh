@@ -29,3 +29,6 @@ sudo apt-get install -q -y -f nodejs npm
 # Python Flask http://flask.pocoo.org/
 sudo apt-get install -q -y -f python-pip
 sudo pip install Flask
+
+# Stress Testing
+sudo apt-get install siege

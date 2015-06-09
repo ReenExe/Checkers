@@ -16,3 +16,6 @@
 * [progress: 135 from 306]
 * [progress: 200 from 306]
 * [progress: complete]
+
+### Рефакторинг с использованием шаблонов
+* [progress: 45 from all]
