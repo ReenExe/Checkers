@@ -20,3 +20,4 @@
 ### Рефакторинг с использованием шаблонов
 * [progress: 45 from 393]
 * [progress: 51 from 393]
+* [progress: 58 from 393]
