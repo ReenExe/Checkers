@@ -33,15 +33,9 @@ class Choice
     }
 
     /**
-     * @deprecated alias of instance
      * @param $choice
      * @return Choice|false
      */
-    public static function factory($choice)
-    {
-        return self::instance($choice);
-    }
-
     public static function instance($choice)
     {
         static $possible = [self::CROSS, self::ZERO];
