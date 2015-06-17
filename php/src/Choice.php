@@ -9,6 +9,11 @@ class Choice
 
     private $choice;
 
+    /**
+     * @var Choice
+     */
+    private $other;
+
     private function  __construct($choice)
     {
         $this->choice = $choice;
@@ -20,15 +25,39 @@ class Choice
     }
 
     /**
+     * @return Choice
+     */
+    public function other()
+    {
+        return $this->other;
+    }
+
+    /**
+     * @deprecated alias of instance
      * @param $choice
      * @return Choice|false
      */
     public static function factory($choice)
     {
+        return self::instance($choice);
+    }
+
+    public static function instance($choice)
+    {
         static $possible = [self::CROSS, self::ZERO];
+        static $instances;
 
         if (in_array($choice, $possible, true)) {
-            return new self($choice);
+            if (empty($instances)) {
+                $instances = [
+                    self::CROSS => $cross = new self(self::CROSS),
+                    self::ZERO => $zero = new self(self::ZERO),
+                ];
+                $cross->other = $zero;
+                $zero->other = $cross;
+            }
+
+            return $instances[$choice];
         }
     }
 }
