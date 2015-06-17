@@ -38,10 +38,9 @@ class Choice
      */
     public static function instance($choice)
     {
-        static $possible = [self::CROSS, self::ZERO];
-        static $instances;
-
-        if (in_array($choice, $possible, true)) {
+        if ($choice === self::CROSS || $choice === self::ZERO) {
+            static $instances;
+            
             if (empty($instances)) {
                 $instances = [
                     self::CROSS => $cross = new self(self::CROSS),
