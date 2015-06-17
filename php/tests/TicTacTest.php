@@ -1,11 +1,20 @@
 <?php
 
+use ReenExe\TicTac\Player;
+use ReenExe\TicTac\Choice;
+
 class TicTacTest extends \PHPUnit_Framework_TestCase
 {
-    public function test()
+    public function testChoice()
     {
-        $player = new \ReenExe\TicTac\Player();
+        $cross = Choice::factory(Choice::CROSS);
 
-        $this->assertInstanceOf('\ReenExe\TicTac\Player', $player);
+        $this->assertTrue($cross->beginner());
+
+        $zero = Choice::factory(Choice::ZERO);
+
+        $this->assertFalse($zero->beginner());
+
+        $this->assertEmpty(Choice::factory(''));
     }
 }
