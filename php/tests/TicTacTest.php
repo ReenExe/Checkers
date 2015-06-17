@@ -17,4 +17,9 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEmpty(Choice::factory(''));
     }
+
+    public function testCreatePlayer()
+    {
+        $player = new Player(Choice::factory(Choice::CROSS));
+    }
 }
