@@ -106,9 +106,9 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
     /**
      * @dataProvider gameProvider
      */
-    public function testWin(Choice $partner, Choice $winner, array $steps)
+    public function testWin(Choice $partnerChoice, Choice $winner, array $steps)
     {
-        $partner = new Player($partner);
+        $partner = new Player($partnerChoice);
 
         foreach ($steps as $step) {
             $this->assertTrue($partner->step($step));
@@ -116,6 +116,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
         $answer = $partner->answer();
         $this->assertTrue($answer->finish());
+
         $this->assertSame($answer->getWinner(), $winner);
     }
 
@@ -123,8 +124,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                Choice::instance(Choice::ZERO), Choice::instance(Choice::CROSS), [6, 7, 8],
-                Choice::instance(Choice::CROSS), Choice::instance(Choice::CROSS), [1, 7, 3],
+                Choice::instance(Choice::CROSS), Choice::instance(Choice::CROSS), [1, 7],
             ],
         ];
     }

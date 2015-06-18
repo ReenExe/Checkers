@@ -20,8 +20,9 @@ class Game
         ];
 
         foreach ($combination as $line) {
-            if ($desc[$line[0]] === $desc[$line[1]] && $desc[$line[1]] === $desc[$line[2]]) {
-                return $desc[$line[1]];
+            $winner = $desc[$line[1]];
+            if ($winner && $desc[$line[0]] === $winner && $winner === $desc[$line[2]]) {
+                return $winner;
             }
         }
     }
