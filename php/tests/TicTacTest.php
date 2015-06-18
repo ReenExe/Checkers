@@ -61,7 +61,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
         }
     }
 
-    public function testCreatePlayer()
+    public function testPlay()
     {
         $player = new Player(Choice::instance(Choice::CROSS));
         $partner = new Player(Choice::instance(Choice::ZERO));
@@ -82,5 +82,20 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
         $to->step($answer->getPosition());
 
         return $this->play($to, $from);
+    }
+
+    public function testWin()
+    {
+        // 6, 7, 8
+
+        $partner = new Player(Choice::instance(Choice::ZERO));
+
+        $partner->step(6);
+        $partner->step(7);
+        $partner->step(8);
+
+        $answer = $partner->answer();
+        $this->assertTrue($answer->finish());
+        $this->assertSame($answer->getWinner(), Choice::instance(Choice::CROSS));
     }
 }

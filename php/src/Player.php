@@ -43,10 +43,10 @@ class Player
 
         if ($this->desk->put($position, $this->choice->other())) {
 
-            if ($this->desk->full()) {
-                $winner = Game::getWinner($this->desk->toArray());
-
+            if ($winner = Game::getWinner($this->desk->toMap())) {
                 $this->lastAnswer = Factory::createWinner($winner);
+            } elseif ($this->desk->full()) {
+                $this->lastAnswer = Factory::createWinner();
             } else {
                 $this->lastAnswer = $this->behavior->getNext();
             }
