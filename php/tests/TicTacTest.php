@@ -126,6 +126,9 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
             [
                 Choice::instance(Choice::CROSS), Choice::instance(Choice::CROSS), [1, 7],
             ],
+            [
+                Choice::instance(Choice::ZERO), Choice::instance(Choice::CROSS), [4, 2, 5, 3],
+            ],
         ];
     }
 }
