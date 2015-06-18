@@ -27,19 +27,30 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
         $this->assertEmpty(Choice::instance(''));
     }
 
-    public function testGameWinner()
+    /**
+     * @dataProvider gameWinnerProvider
+     */
+    public function testGameWinner(array $desc, Choice $winner)
+    {
+        $this->assertSame($winner, Game::getWinner($desc));
+    }
+
+    public function gameWinnerProvider()
     {
         $c = Choice::instance(Choice::CROSS);
 
         $z = Choice::instance(Choice::ZERO);
 
-        $desc = [
-            $c, $c, $z,
-            $c, $c, $z,
-            $z, $z, $c,
+        return [
+            [
+                [
+                    $c, $c, $z,
+                    $c, $c, $z,
+                    $z, $z, $c,
+                ],
+                $c
+            ],
         ];
-
-        $this->assertSame($c, Game::getWinner($desc));
     }
 
     public function testDesk()
