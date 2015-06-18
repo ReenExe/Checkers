@@ -84,18 +84,28 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
         return $this->play($to, $from);
     }
 
-    public function testWin()
+    /**
+     * @dataProvider gameProvider
+     */
+    public function testWin(Choice $partner, Choice $winner, array $steps)
     {
-        // 6, 7, 8
+        $partner = new Player($partner);
 
-        $partner = new Player(Choice::instance(Choice::ZERO));
-
-        $partner->step(6);
-        $partner->step(7);
-        $partner->step(8);
+        foreach ($steps as $step) {
+            $this->assertTrue($partner->step($step));
+        }
 
         $answer = $partner->answer();
         $this->assertTrue($answer->finish());
-        $this->assertSame($answer->getWinner(), Choice::instance(Choice::CROSS));
+        $this->assertSame($answer->getWinner(), $winner);
+    }
+
+    public function gameProvider()
+    {
+        return [
+            [
+                Choice::instance(Choice::ZERO), Choice::instance(Choice::CROSS), [6, 7, 8]
+            ],
+        ];
     }
 }
