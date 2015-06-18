@@ -50,6 +50,14 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
                 ],
                 $c
             ],
+            [
+                [
+                    false, false, false,
+                    $c, $c, $c,
+                    $z, $z, false,
+                ],
+                $c
+            ],
         ];
     }
 
