@@ -21,6 +21,21 @@ namespace TicTacToe
 		}
 
 		[Test()]
+		public void Desc()
+		{
+			Choice c = TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS);
+			Choice z = TicTacToe.Choice.Instance(TicTacToe.Choice.ZERO);
+
+			TicTacToe.Choice[] desc = new TicTacToe.Choice[] {
+				c, c, c,
+				z, c, z,
+				z, z, c,
+			};
+
+			Assert.AreSame(Game.getWinner(desc), c);
+		}
+
+		[Test()]
 		public void OnePlayer()
 		{
 			Player player = new Player(TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS));
