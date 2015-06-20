@@ -1,12 +1,13 @@
 using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 
 namespace TicTacToe
 {
 	[TestFixture()]
 	public class TicTacToePlayerTest
 	{
-		[Test()]
+		[Test]
 		public void Choice()
 		{
 			Choice cross = TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS);
@@ -20,22 +21,28 @@ namespace TicTacToe
 			Assert.AreSame(cross, zero.other());
 		}
 
-		[Test()]
-		public void Desc()
+		[Test, TestCaseSource("DescDataProvider")]
+		public void Desc(TicTacToe.Choice[] desc, Choice winner)
+		{
+			Assert.AreSame(Game.getWinner(desc), winner);
+		}
+
+		private IEnumerable<object[]> DescDataProvider()
 		{
 			Choice c = TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS);
 			Choice z = TicTacToe.Choice.Instance(TicTacToe.Choice.ZERO);
 
-			TicTacToe.Choice[] desc = new TicTacToe.Choice[] {
-				c, c, c,
-				z, c, z,
-				z, z, c,
+			yield return new object[] { 
+				new TicTacToe.Choice[] {
+					c, c, c,
+					z, c, z,
+					z, z, c,
+				},
+				c
 			};
-
-			Assert.AreSame(Game.getWinner(desc), c);
 		}
 
-		[Test()]
+		[Test]
 		public void OnePlayer()
 		{
 			Player player = new Player(TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS));
