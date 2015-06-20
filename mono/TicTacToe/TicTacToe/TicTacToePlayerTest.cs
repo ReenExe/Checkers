@@ -21,11 +21,13 @@ namespace TicTacToe
 		}
 
 		[Test()]
-		public void First()
+		public void OnePlayer()
 		{
 			Player player = new Player(TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS));
 
-			Assert.IsTrue(player.answer());
+			Assert.IsFalse(player.answer().finish);
+
+			Assert.IsNull(player.answer().winner);
 		}
 	}
 }

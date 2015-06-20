@@ -6,9 +6,9 @@ namespace TicTacToe
 	{
 		public Player (Choice choise){}
 
-		public bool answer()
+		public Answer answer()
 		{
-			return true;
+			return new Answer();
 		}
 	}
 }
