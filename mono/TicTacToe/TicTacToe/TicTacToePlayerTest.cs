@@ -9,19 +9,21 @@ namespace TicTacToe
 		[Test()]
 		public void Choice()
 		{
-			Choice cross = new Choice(TicTacToe.Choice.CROSS);
+			Choice cross = TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS);
 
 			Assert.IsTrue(cross.begginer());
 
-			Choice zero = new TicTacToe.Choice(TicTacToe.Choice.ZERO);
+			Choice zero = TicTacToe.Choice.Instance(TicTacToe.Choice.ZERO);
 
-			Assert.IsFalse (zero.begginer());
+			Assert.IsFalse(zero.begginer());
+
+			Assert.AreSame(cross, zero.other());
 		}
 
 		[Test()]
 		public void First()
 		{
-			Player player = new Player(new TicTacToe.Choice(TicTacToe.Choice.CROSS));
+			Player player = new Player(TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS));
 
 			Assert.IsTrue(player.answer());
 		}
