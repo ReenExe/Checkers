@@ -34,6 +34,15 @@ namespace TicTacToe
 
 			yield return new object[] { 
 				new TicTacToe.Choice[] {
+					null, null, null,
+					null, c, 	null,
+					null, null, null,
+				},
+				null
+			};
+
+			yield return new object[] { 
+				new TicTacToe.Choice[] {
 					c, c, c,
 					z, c, z,
 					z, z, c,
