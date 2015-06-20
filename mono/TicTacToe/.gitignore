@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+
+!Choice.cs
+!Player.cs
+!TicTacToePlayerTest.cs
+
+!*/
