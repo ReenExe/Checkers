@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace TicTacToe
 {
-	[TestFixture()]
+	[TestFixture]
 	public class TicTacToePlayerTest
 	{
 		[Test]
@@ -22,9 +22,15 @@ namespace TicTacToe
 		}
 
 		[Test, TestCaseSource("DescDataProvider")]
-		public void Desc(TicTacToe.Choice[] desc, Choice winner)
+		public void Gamec(TicTacToe.Choice[] desc, Choice winner)
 		{
 			Assert.AreSame(Game.getWinner(desc), winner);
+		}
+
+		[Test]
+		public void Desc()
+		{
+			Desc desc = new Desc();
 		}
 
 		private IEnumerable<object[]> DescDataProvider()
@@ -49,6 +55,14 @@ namespace TicTacToe
 				},
 				c
 			};
+		}
+
+		[Test]
+		public void SequenceBehavior()
+		{
+			Desc desc = new Desc ();
+
+			TicTacToe.Behavior.Sequence behavior = new TicTacToe.Behavior.Sequence(desc);
 		}
 
 		[Test]

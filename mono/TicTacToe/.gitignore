@@ -6,6 +6,9 @@
 !Player.cs
 !Answer.cs
 !Game.cs
+!Behavior.cs
+!Sequence.cs
+!Desc.cs
 !TicTacToePlayerTest.cs
 
 !*/
