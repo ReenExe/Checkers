@@ -6,8 +6,15 @@ namespace TicTacToe
 	{
 		private Choice[] desc = new Choice[9];
 
-		public Desc()
+		public bool put(byte position, Choice choice)
 		{
+			if (0 <= position && position <= 8 && desc[position] == null) {
+				desc[position] = choice;
+
+				return true;
+			}
+
+			return false;
 		}
 	}
 }

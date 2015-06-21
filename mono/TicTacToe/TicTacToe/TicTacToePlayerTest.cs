@@ -31,6 +31,12 @@ namespace TicTacToe
 		public void Desc()
 		{
 			Desc desc = new Desc();
+			Choice c = TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS);
+
+			for (byte position = 0; position <= 8; position++) {
+				Assert.IsTrue(desc.put(position, c));
+				Assert.IsFalse(desc.put(position, c));
+			}
 		}
 
 		private IEnumerable<object[]> DescDataProvider()
@@ -60,7 +66,7 @@ namespace TicTacToe
 		[Test]
 		public void SequenceBehavior()
 		{
-			Desc desc = new Desc ();
+			Desc desc = new Desc();
 
 			TicTacToe.Behavior.Sequence behavior = new TicTacToe.Behavior.Sequence(desc);
 		}
