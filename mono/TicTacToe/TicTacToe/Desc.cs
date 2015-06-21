@@ -16,5 +16,14 @@ namespace TicTacToe
 
 			return false;
 		}
+
+		public bool isFull()
+		{
+			foreach (Choice choice in desc) {
+				if (choice == null) return false;
+			}
+
+			return true;
+		}
 	}
 }

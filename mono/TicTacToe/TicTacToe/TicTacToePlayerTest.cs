@@ -33,10 +33,16 @@ namespace TicTacToe
 			Desc desc = new Desc();
 			Choice c = TicTacToe.Choice.Instance(TicTacToe.Choice.CROSS);
 
-			for (byte position = 0; position <= 8; position++) {
+			Assert.IsFalse(desc.isFull());
+
+			for (byte position = 0; position < 8; position++) {
 				Assert.IsTrue(desc.put(position, c));
+				Assert.IsFalse(desc.isFull());
 				Assert.IsFalse(desc.put(position, c));
 			}
+
+			Assert.IsTrue(desc.put(8, c));
+			Assert.IsTrue(desc.isFull());
 		}
 
 		private IEnumerable<object[]> DescDataProvider()
