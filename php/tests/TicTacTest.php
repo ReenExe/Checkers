@@ -69,15 +69,12 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
         for ($position = 0; $position < 8; $position++) {
             $this->assertTrue($desk->put($position, $choice));
+            $this->assertFalse($desk->put($position, $choice));
             $this->assertFalse($desk->full());
         }
 
         $this->assertTrue($desk->put(8, $choice));
         $this->assertTrue($desk->full());
-
-        for ($position = 0; $position <= 8; $position++) {
-            $this->assertFalse($desk->put($position, $choice));
-        }
     }
 
     public function testPlay()
