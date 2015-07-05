@@ -1,3 +1,4 @@
 class Choice
-  X = 'X'
+  CROSS = 'X'
+  ZERO = '0'
 end
