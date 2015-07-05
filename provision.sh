@@ -34,3 +34,7 @@ sudo pip install Flask
 sudo apt-get install siege
 sudo apt-get install -y python-dev
 sudo pip install locustio
+
+# Ruby
+sudo apt-get install ruby-full
+sudo gem install test-unit-full
