@@ -1,5 +1,6 @@
+require_relative 'answer'
 class Player
-  def answer
-    return true
+  def answer(player = nil)
+    return Answer.new
   end
 end

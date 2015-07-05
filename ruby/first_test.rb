@@ -5,6 +5,6 @@ require_relative 'player'
 
 class FirstTest < Test::Unit::TestCase
   def testTrue()
-    assert_equal(true, Player.new.answer)
+    assert_instance_of(Answer, Player.new.answer)
   end
 end
