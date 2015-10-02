@@ -45,6 +45,7 @@
 * [progress: 353 from 592]
 * [progress: 433 from 592]
 * [progress: 510 from 592]
+* [progress: complete]
 
 ### Базы данных. Проектирование, реализация и сопровождение. Теория и практика.
 
