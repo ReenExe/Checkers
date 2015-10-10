@@ -37,6 +37,7 @@
 * [progress: 170 from 647]
 * [progress: 215 from 647]
 * [progress: 235 from 647]
+* [progress: 260 from 647]
 
 ### Чистый код: создание, анализ и рефакторинг.
 * [progress: 75 from 466]
