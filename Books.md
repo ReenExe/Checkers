@@ -28,7 +28,7 @@
 * [progress: 125 from 393]
 * [progress: 150 from 393]
 
-### Паттерны проектирования (Head First)
+### Паттерны проектирования (Head First) (2012)
 * [progress: 16 from 647]
 * [progress: 48 from 647]
 * [progress: 100 from 647]
