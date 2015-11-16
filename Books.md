@@ -51,7 +51,7 @@
 * [progress: 610 from 647]
 * [progress: complete]
 
-### Чистый код: создание, анализ и рефакторинг.
+### Чистый код: создание, анализ и рефакторинг. (Роберт Мартин)
 * [progress: 75 from 466]
 * [progress: 100 from 466]
 * [progress: 150 from 466]
@@ -60,6 +60,9 @@
 * [progress: 300 from 466]
 * [progress: 350 from 466]
 * [progress: complete]
+
+### Идеальный программист. Как стать профессионалом разработки ПО. (Роберт Мартин)
+* [progress: 77 from 224]
 
 ### Изучаем JavaScript. (Head First) Майкл Моррисон.
 * [progress: 353 from 592]
