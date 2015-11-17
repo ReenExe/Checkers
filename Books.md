@@ -64,6 +64,7 @@
 ### Идеальный программист. Как стать профессионалом разработки ПО. (Роберт Мартин)
 * [progress: 77 from 224]
 * [progress: 100 from 224]
+* [progress: complete]
 
 ### Изучаем JavaScript. (Head First) Майкл Моррисон.
 * [progress: 353 from 592]
