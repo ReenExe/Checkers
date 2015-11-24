@@ -7,10 +7,12 @@ namespace ReenExe\TicTac;
  * Class PlayerAcademy
  * @package ReenExe\TicTac
  */
-class PlayerAcademy
+abstract class PlayerAcademy
 {
     public static function getPlayer(Choice $choice)
     {
         return new Player($choice);
     }
+
+    abstract protected static function getBehavior();
 }
