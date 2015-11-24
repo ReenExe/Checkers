@@ -4,33 +4,14 @@ use ReenExe\TicTac\Player;
 use ReenExe\TicTac\Choice;
 use ReenExe\TicTac\Desk;
 use ReenExe\TicTac\Game;
+use ReenExe\TicTac\PlayerAcademy\StrategyPlayerAcademy;
 
 class TicTacTest extends \PHPUnit_Framework_TestCase
 {
-    public function testSuccessChoice()
-    {
-        $cross = Choice::instance(Choice::CROSS);
-
-        $this->assertTrue($cross->beginner());
-
-        $zero = Choice::instance(Choice::ZERO);
-
-        $this->assertFalse($zero->beginner());
-
-        $this->assertSame($cross, $zero->other());
-
-        $this->assertSame($zero, $cross->other());
-    }
-
-    public function testFailChoice()
-    {
-        $this->assertEmpty(Choice::instance(''));
-    }
-
     /**
      * @dataProvider gameWinnerProvider
      */
-    public function testGameWinner(array $desc, Choice $winner)
+    public function testGameWinner(array $desc, $winner)
     {
         $this->assertSame($winner, Game::getWinner($desc));
     }
@@ -58,6 +39,14 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
                 ],
                 $c
             ],
+            [
+                [
+                    false, false, false,
+                    false, false, false,
+                    false, false, false,
+                ],
+                false
+            ],
         ];
     }
 
@@ -67,7 +56,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
         $choice = Choice::instance(Choice::CROSS);
 
-        for ($position = 0; $position < 8; $position++) {
+        for ($position = 0; $position < 8; ++$position) {
             $this->assertTrue($desk->put($position, $choice));
             $this->assertFalse($desk->put($position, $choice));
             $this->assertFalse($desk->full());
@@ -79,8 +68,8 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
     public function testPlay()
     {
-        $player = new Player(Choice::instance(Choice::CROSS));
-        $partner = new Player(Choice::instance(Choice::ZERO));
+        $player = StrategyPlayerAcademy::getPlayer(Choice::instance(Choice::CROSS));
+        $partner = StrategyPlayerAcademy::getPlayer(Choice::instance(Choice::ZERO));
 
         $answer = $this->play($player, $partner);
 
@@ -105,7 +94,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
      */
     public function testWin(Choice $partnerChoice, Choice $winner, array $steps)
     {
-        $partner = new Player($partnerChoice);
+        $partner = StrategyPlayerAcademy::getPlayer($partnerChoice);
 
         foreach ($steps as $step) {
             $this->assertTrue($partner->step($step));

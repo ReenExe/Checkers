@@ -25,5 +25,7 @@ class Game
                 return $winner;
             }
         }
+
+        return false;
     }
 }

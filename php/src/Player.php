@@ -3,7 +3,7 @@
 namespace ReenExe\TicTac;
 
 use ReenExe\TicTac\Answer\Factory;
-use ReenExe\TicTac\Behavior\Sequence;
+use ReenExe\TicTac\Behavior\Strategy;
 
 class Player
 {
@@ -30,7 +30,7 @@ class Player
 
         $this->desk = new Desk();
 
-        $this->behavior = new Sequence($this->desk, $this->choice);
+        $this->behavior = new Strategy($this->desk, $this->choice);
 
         if ($choice->beginner()) {
             $this->lastAnswer = $this->behavior->getNext();
@@ -42,15 +42,7 @@ class Player
         if ($this->finish()) return false;
 
         if ($this->desk->put($position, $this->choice->other())) {
-
-            if ($winner = Game::getWinner($this->desk->toMap())) {
-                $this->lastAnswer = Factory::createWinner($winner);
-            } elseif ($this->desk->full()) {
-                $this->lastAnswer = Factory::createWinner();
-            } else {
-                $this->lastAnswer = $this->behavior->getNext();
-            }
-
+            $this->lastAnswer = $this->getSituation();
             return true;
         }
 
@@ -68,5 +60,18 @@ class Player
     private function finish()
     {
         return $this->answer() && $this->answer()->finish();
+    }
+
+    private function getSituation()
+    {
+        if ($winner = Game::getWinner($this->desk->toMap())) {
+            return Factory::createWinner($winner);
+        }
+
+        if ($this->desk->full()) {
+            return Factory::createWinner();
+        }
+
+        return $this->behavior->getNext();
     }
 }
