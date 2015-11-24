@@ -14,6 +14,11 @@ abstract class Behavior
      */
     protected $player;
 
+    //     0 1 2
+    //     3 4 5
+    //     6 7 8
+    protected $queue = [4, 1, 2, 5, 8, 7, 6, 3, 0];
+
     public function __construct(Desk $desc, Choice $player)
     {
         $this->desc = $desc;
