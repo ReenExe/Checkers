@@ -3,7 +3,7 @@
 namespace ReenExe\TicTac;
 
 use ReenExe\TicTac\Answer\Factory;
-use ReenExe\TicTac\Behavior\Sequence;
+use ReenExe\TicTac\Behavior\Strategy;
 
 class Player
 {
@@ -30,7 +30,7 @@ class Player
 
         $this->desk = new Desk();
 
-        $this->behavior = new Sequence($this->desk, $this->choice);
+        $this->behavior = new Strategy($this->desk, $this->choice);
 
         if ($choice->beginner()) {
             $this->lastAnswer = $this->behavior->getNext();

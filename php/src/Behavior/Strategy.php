@@ -6,7 +6,7 @@ use ReenExe\TicTac\Answer\Factory;
 use ReenExe\TicTac\Behavior;
 use ReenExe\TicTac\Game;
 
-class Sequence extends Behavior
+class Strategy extends Behavior
 {
     //     0 1 2
     //     3 4 5
