@@ -8,30 +8,10 @@ use ReenExe\TicTac\PlayerAcademy\StrategyPlayerAcademy;
 
 class TicTacTest extends \PHPUnit_Framework_TestCase
 {
-    public function testSuccessChoice()
-    {
-        $cross = Choice::instance(Choice::CROSS);
-
-        $this->assertTrue($cross->beginner());
-
-        $zero = Choice::instance(Choice::ZERO);
-
-        $this->assertFalse($zero->beginner());
-
-        $this->assertSame($cross, $zero->other());
-
-        $this->assertSame($zero, $cross->other());
-    }
-
-    public function testFailChoice()
-    {
-        $this->assertEmpty(Choice::instance(''));
-    }
-
     /**
      * @dataProvider gameWinnerProvider
      */
-    public function testGameWinner(array $desc, Choice $winner)
+    public function testGameWinner(array $desc, $winner)
     {
         $this->assertSame($winner, Game::getWinner($desc));
     }
@@ -58,6 +38,14 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
                     $z, $z, false,
                 ],
                 $c
+            ],
+            [
+                [
+                    false, false, false,
+                    false, false, false,
+                    false, false, false,
+                ],
+                false
             ],
         ];
     }
