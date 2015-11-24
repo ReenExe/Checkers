@@ -19,8 +19,18 @@ class ChoiceTest extends \PHPUnit_Framework_TestCase
         $this->assertSame($zero, $cross->other());
     }
 
-    public function testFailChoice()
+    /**
+     * @dataProvider failDataProvider
+     */
+    public function testFailChoice($choice)
     {
-        $this->assertFalse(Choice::instance(''));
+        $this->assertFalse(Choice::instance($choice));
+    }
+
+    public function failDataProvider()
+    {
+        yield [''];
+        yield [false];
+        yield ['A'];
     }
 }
