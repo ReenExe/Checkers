@@ -30,5 +30,8 @@ abstract class Behavior
         $this->desc->put($position, $this->player);
     }
 
+    /**
+     * @return Answer
+     */
     abstract public function getNext();
 }

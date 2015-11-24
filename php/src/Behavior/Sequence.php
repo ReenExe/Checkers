@@ -6,5 +6,8 @@ use ReenExe\TicTac\Behavior;
 
 class Sequence extends Behavior
 {
+    public function getNext()
+    {
 
+    }
 }

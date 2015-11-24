@@ -4,6 +4,7 @@ use ReenExe\TicTac\Player;
 use ReenExe\TicTac\Choice;
 use ReenExe\TicTac\Desk;
 use ReenExe\TicTac\Game;
+use ReenExe\TicTac\PlayerAcademy;
 
 class TicTacTest extends \PHPUnit_Framework_TestCase
 {
@@ -67,7 +68,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
         $choice = Choice::instance(Choice::CROSS);
 
-        for ($position = 0; $position < 8; $position++) {
+        for ($position = 0; $position < 8; ++$position) {
             $this->assertTrue($desk->put($position, $choice));
             $this->assertFalse($desk->put($position, $choice));
             $this->assertFalse($desk->full());
@@ -79,8 +80,8 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
     public function testPlay()
     {
-        $player = new Player(Choice::instance(Choice::CROSS));
-        $partner = new Player(Choice::instance(Choice::ZERO));
+        $player = PlayerAcademy::getPlayer(Choice::instance(Choice::CROSS));
+        $partner = PlayerAcademy::getPlayer(Choice::instance(Choice::ZERO));
 
         $answer = $this->play($player, $partner);
 
@@ -105,7 +106,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
      */
     public function testWin(Choice $partnerChoice, Choice $winner, array $steps)
     {
-        $partner = new Player($partnerChoice);
+        $partner = PlayerAcademy::getPlayer($partnerChoice);
 
         foreach ($steps as $step) {
             $this->assertTrue($partner->step($step));
