@@ -21,6 +21,6 @@ class ChoiceTest extends \PHPUnit_Framework_TestCase
 
     public function testFailChoice()
     {
-        $this->assertEmpty(Choice::instance(''));
+        $this->assertFalse(Choice::instance(''));
     }
 }

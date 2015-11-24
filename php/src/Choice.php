@@ -52,5 +52,7 @@ class Choice
 
             return $instances[$choice];
         }
+
+        return false;
     }
 }
