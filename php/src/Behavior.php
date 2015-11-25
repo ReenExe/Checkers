@@ -37,14 +37,6 @@ abstract class Behavior
         return array_diff($this->queue, array_keys($this->desc->toArray()));
     }
 
-    protected function getFirst(array $queue)
-    {
-        reset($queue);
-        $position = current($queue);
-        $this->put($position);
-        return Factory::createPosition($position);
-    }
-
     /**
      * @return Answer
      */

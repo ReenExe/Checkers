@@ -36,4 +36,12 @@ class Strategy extends Behavior
 
         return $this->getFirst($queue);
     }
+
+
+    private function getFirst(array $queue)
+    {
+        $position = current($queue);
+        $this->put($position);
+        return Factory::createPosition($position);
+    }
 }

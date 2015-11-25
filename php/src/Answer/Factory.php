@@ -15,9 +15,4 @@ class Factory
     {
         return new Position($position);
     }
-
-    public static function createFinish($position)
-    {
-        return new Finish($position);
-    }
 }

@@ -4,6 +4,9 @@ namespace ReenExe\TicTac;
 
 class Desk
 {
+    /**
+     * @var Choice[]
+     */
     private $map = [];
 
     /**
@@ -29,11 +32,27 @@ class Desk
 
     public function toMap()
     {
-        return $this->map + array_fill(0, 9, false);
+        return $this->map + $this->getEmptyMap();
     }
 
     public function full()
     {
         return 9 === count($this->map);
+    }
+
+    public function __debugInfo()
+    {
+        $map = $this->getEmptyMap();
+
+        foreach ($this->map as $position => $choice) {
+            $map[$position] = (string) $choice;
+        }
+
+        return [$map];
+    }
+
+    private function getEmptyMap()
+    {
+        return array_fill(0, 9, false);
     }
 }

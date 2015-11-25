@@ -55,4 +55,9 @@ class Choice
 
         return false;
     }
+
+    public function __toString()
+    {
+        return (string) $this->choice;
+    }
 }
