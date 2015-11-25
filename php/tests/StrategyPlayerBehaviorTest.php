@@ -4,31 +4,8 @@ use ReenExe\TicTac\Player;
 use ReenExe\TicTac\Choice;
 use ReenExe\TicTac\PlayerAcademy\StrategyPlayerAcademy;
 
-class StrategyPlayerBehaviorTest extends \PHPUnit_Framework_TestCase
+class StrategyPlayerBehaviorTest extends AbstractPlayerBehaviorTest
 {
-    public function testPlay()
-    {
-        $player = $this->getPlayer(Choice::instance(Choice::CROSS));
-        $partner = $this->getPlayer(Choice::instance(Choice::ZERO));
-
-        $answer = $this->play($player, $partner);
-
-        $this->assertTrue($answer->finish());
-    }
-
-    private function play(Player $from, Player $to)
-    {
-        $answer = $from->answer();
-
-        if ($answer->finish()) {
-            return $answer;
-        }
-
-        $to->step($answer->getPosition());
-
-        return $this->play($to, $from);
-    }
-
     /**
      * @dataProvider gameProvider
      */
@@ -57,11 +34,9 @@ class StrategyPlayerBehaviorTest extends \PHPUnit_Framework_TestCase
             ],
         ];
     }
-    
-    public function getPlayer(Choice $choice)
-    {
-        $academy = new StrategyPlayerAcademy();
 
-        return $academy->getPlayer($choice);
+    protected function getAcademy()
+    {
+        return new StrategyPlayerAcademy();
     }
 }
