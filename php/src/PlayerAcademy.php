@@ -1,6 +1,7 @@
 <?php
 
 namespace ReenExe\TicTac;
+use ReenExe\TicTac\Behavior\BehaviorFactoryInterface;
 
 /**
  * Patter `Factory`
@@ -9,10 +10,13 @@ namespace ReenExe\TicTac;
  */
 abstract class PlayerAcademy
 {
-    public static function getPlayer(Choice $choice)
+    public function getPlayer(Choice $choice)
     {
-        return new Player($choice);
+        return new Player($this->getBehaviorFactory(), $choice);
     }
 
-    abstract protected static function getBehavior();
+    /**
+     * @return BehaviorFactoryInterface
+     */
+    abstract protected function getBehaviorFactory();
 }

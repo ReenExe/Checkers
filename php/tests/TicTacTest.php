@@ -25,8 +25,8 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
 
     public function testPlay()
     {
-        $player = StrategyPlayerAcademy::getPlayer(Choice::instance(Choice::CROSS));
-        $partner = StrategyPlayerAcademy::getPlayer(Choice::instance(Choice::ZERO));
+        $player = $this->getPlayer(Choice::instance(Choice::CROSS));
+        $partner = $this->getPlayer(Choice::instance(Choice::ZERO));
 
         $answer = $this->play($player, $partner);
 
@@ -51,7 +51,7 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
      */
     public function testWin(Choice $partnerChoice, Choice $winner, array $steps)
     {
-        $partner = StrategyPlayerAcademy::getPlayer($partnerChoice);
+        $partner = $this->getPlayer($partnerChoice);
 
         foreach ($steps as $step) {
             $this->assertTrue($partner->step($step));
@@ -73,5 +73,12 @@ class TicTacTest extends \PHPUnit_Framework_TestCase
                 Choice::instance(Choice::ZERO), Choice::instance(Choice::CROSS), [4, 2, 5, 3],
             ],
         ];
+    }
+    
+    public function getPlayer(Choice $choice)
+    {
+        $academy = new StrategyPlayerAcademy();
+
+        return $academy->getPlayer($choice);
     }
 }

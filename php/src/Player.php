@@ -3,6 +3,7 @@
 namespace ReenExe\TicTac;
 
 use ReenExe\TicTac\Answer\Factory;
+use ReenExe\TicTac\Behavior\BehaviorFactoryInterface;
 use ReenExe\TicTac\Behavior\Strategy;
 
 class Player
@@ -24,13 +25,13 @@ class Player
      */
     private $lastAnswer;
 
-    public function __construct(Choice $choice)
+    public function __construct(BehaviorFactoryInterface $behaviorFactory, Choice $choice)
     {
         $this->choice = $choice;
 
         $this->desk = new Desk();
 
-        $this->behavior = new Strategy($this->desk, $this->choice);
+        $this->behavior = $behaviorFactory->create($this->desk, $this->choice);
 
         if ($choice->beginner()) {
             $this->lastAnswer = $this->behavior->getNext();
