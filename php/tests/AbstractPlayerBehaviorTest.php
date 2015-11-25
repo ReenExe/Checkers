@@ -31,6 +31,9 @@ abstract class AbstractPlayerBehaviorTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @dataProvider gameProvider
+     * @param Choice $partnerChoice
+     * @param Choice $winner
+     * @param array $steps
      */
     public function testWin(Choice $partnerChoice, Choice $winner, array $steps)
     {
