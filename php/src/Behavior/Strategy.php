@@ -10,7 +10,7 @@ class Strategy extends Behavior
 {
     public function getNext()
     {
-        $queue = array_diff($this->queue, array_keys($this->desc->toArray()));
+        $queue = $this->getRestQueue();
 
         $descMap = $this->desc->toMap();
 
@@ -34,9 +34,6 @@ class Strategy extends Behavior
             }
         }
 
-        reset($queue);
-        $position = current($queue);
-        $this->put($position);
-        return Factory::createPosition($position);
+        return $this->getFirst($queue);
     }
 }

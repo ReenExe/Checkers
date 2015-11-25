@@ -2,6 +2,8 @@
 
 namespace ReenExe\TicTac;
 
+use ReenExe\TicTac\Answer\Factory;
+
 abstract class Behavior
 {
     /**
@@ -28,6 +30,19 @@ abstract class Behavior
     protected function put($position)
     {
         $this->desc->put($position, $this->player);
+    }
+
+    protected function getRestQueue()
+    {
+        return array_diff($this->queue, array_keys($this->desc->toArray()));
+    }
+
+    protected function getFirst(array $queue)
+    {
+        reset($queue);
+        $position = current($queue);
+        $this->put($position);
+        return Factory::createPosition($position);
     }
 
     /**
