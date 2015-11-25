@@ -30,6 +30,25 @@ abstract class AbstractPlayerBehaviorTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * @dataProvider gameProvider
+     */
+    public function testWin(Choice $partnerChoice, Choice $winner, array $steps)
+    {
+        $partner = $this->getPlayer($partnerChoice);
+
+        foreach ($steps as $step) {
+            $this->assertTrue($partner->step($step));
+        }
+
+        $answer = $partner->answer();
+        $this->assertTrue($answer->finish());
+
+        $this->assertSame($answer->getWinner(), $winner);
+    }
+
+    abstract public function gameProvider();
+
+    /**
      * @param Choice $choice
      * @return Player
      */
