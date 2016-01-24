@@ -92,6 +92,7 @@
 * [progress: 160 from 486]
 * [progress: 225 from 486]
 * [progress: 320 from 486]
+* [progress: 356 from 486]
 
 ### Изучаем Spark. Молниеносный анализ данных
 
