@@ -83,7 +83,7 @@
 * [progress: 53 from 301]
 
 ### Python и анализ данных (Уэс Маккинни)
-* [part progress: 415-450, and total 486]
+* [part progress: 415-450 from total 486]
 * [progress: 70 from 486]
 * [progress: 108 from 486]
 * [progress: 135 from 486]
@@ -94,6 +94,7 @@
 * [progress: 320 from 486]
 * [progress: 356 from 486]
 * [progress: 386 from 486]
+* [progress: complete]
 
 ### Изучаем Spark. Молниеносный анализ данных
 
