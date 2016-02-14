@@ -76,6 +76,7 @@
 * [progress: 48 from 146]
 * [progress: 60 from 146]
 * [progress: 65 from 146]
+* [progress: complete]
 
 ### Конкретная математика. Математические основы информатики
 * [progress: 8 from 703]
