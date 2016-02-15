@@ -78,6 +78,9 @@
 * [progress: 65 from 146]
 * [progress: complete]
 
+### JavaScript для профессиональных веб-разработчиков (2015) (Николас Закас)
+* [progress: 111 from 960]
+
 ### Конкретная математика. Математические основы информатики
 * [progress: 8 from 703]
 * [progress: 28 from 703]
