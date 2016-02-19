@@ -87,6 +87,7 @@
 * [progress: 165 from 700+]
 * [progress: 232 from 700+]
 * [progress: 320 from 700+]
+* [progress: 421 from 700+]
 
 ### Конкретная математика. Математические основы информатики
 * [progress: 8 from 703]
