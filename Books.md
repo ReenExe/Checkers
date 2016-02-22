@@ -81,6 +81,7 @@
 ### JavaScript для профессиональных веб-разработчиков (2015) (Николас Закас)
 * [progress: 111 from 960]
 * [progress: 145 from 960]
+* [progress: 170 from 960]
 
 ### PHP. Рецепты программирования (2015) (Дэвид Скляр, Адам Трахтенберг)
 * [progress: 145 from 700+]
@@ -90,6 +91,7 @@
 * [progress: 421 from 700+]
 * [progress: 499 from 700+]
 * [progress: 733 from 784 ]
+* [progress: complete]
 
 ### Конкретная математика. Математические основы информатики
 * [progress: 8 from 703]
