@@ -86,6 +86,7 @@
 * [progress: 248 from 960]
 * [progress: 291 from 960]
 * [progress: 362 from 960]
+* [progress: 482 from 960]
 
 ### PHP. Рецепты программирования (2015) (Дэвид Скляр, Адам Трахтенберг)
 * [progress: 145 from 700+]
