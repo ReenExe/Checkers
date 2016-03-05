@@ -102,6 +102,7 @@
 
 ### React.js Essentials (2015) (Artemij Fedosejev)
 * [progress: 1 from 100+]
+* [progress: 52 from 208]
 
 ### Learning React Native: Building Native Mobile Apps with JavaScript
 * [progress: 1 from 100+]
