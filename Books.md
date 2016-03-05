@@ -96,6 +96,15 @@
 * [progress: 817 from 960]
 * [progress: 922 from 960]
 
+### Learning ECMAScript 6 (2015) (Narayan Prusty)
+* [progress: 1 from 100+]
+
+### React.js Essentials (2015) (Artemij Fedosejev)
+* [progress: 1 from 100+]
+
+### Learning React Native: Building Native Mobile Apps with JavaScript
+* [progress: 1 from 100+]
+
 ### PHP. Рецепты программирования (2015) (Дэвид Скляр, Адам Трахтенберг)
 * [progress: 145 from 700+]
 * [progress: 165 from 700+]
