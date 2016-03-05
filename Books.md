@@ -95,6 +95,7 @@
 * [progress: 770 from 960]
 * [progress: 817 from 960]
 * [progress: 922 from 960]
+* [progress: complete]
 
 ### Learning ECMAScript 6 (2015) (Narayan Prusty)
 * [progress: 1 from 100+]
