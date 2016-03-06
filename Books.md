@@ -103,6 +103,7 @@
 ### React.js Essentials (2015) (Artemij Fedosejev)
 * [progress: 1 from 100+]
 * [progress: 52 from 208]
+* [progress: 102 from 208]
 
 ### Learning React Native: Building Native Mobile Apps with JavaScript
 * [progress: 1 from 100+]
@@ -116,6 +117,9 @@
 * [progress: 499 from 700+]
 * [progress: 733 from 784 ]
 * [progress: complete]
+
+###  NoSQL. Новая методология разработки нереляционных баз данных (2013) (Мартин Фаулер)
+* [progress: 14 from 172]
 
 ### Конкретная математика. Математические основы информатики
 * [progress: 8 from 703]
