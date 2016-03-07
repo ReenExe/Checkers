@@ -108,6 +108,10 @@
 ### Learning React Native: Building Native Mobile Apps with JavaScript
 * [progress: 1 from 100+]
 
+### Основы разработки веб-приложений (2015) (Пьюривал Сэмми)
+* [progress: 272 from 272]
+* [progress: complete]
+
 ### PHP. Рецепты программирования (2015) (Дэвид Скляр, Адам Трахтенберг)
 * [progress: 145 from 700+]
 * [progress: 165 from 700+]
