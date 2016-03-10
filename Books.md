@@ -105,6 +105,9 @@
 * [progress: 52 from 208]
 * [progress: 102 from 208]
 
+### Introduction to React (2015) (Cory Gackenheimer)
+* [progress: 14 from 141]
+
 ### Learning React Native: Building Native Mobile Apps with JavaScript
 * [progress: 1 from 100+]
 
