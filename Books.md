@@ -109,6 +109,7 @@
 * [progress: 14 from 141]
 * [progress: 47 from 141]
 * [progress: 99 from 141]
+* [progress: complete]
 
 ### Learning React Native: Building Native Mobile Apps with JavaScript
 * [progress: 1 from 100+]
