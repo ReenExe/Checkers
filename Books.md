@@ -111,8 +111,9 @@
 * [progress: 99 from 141]
 * [progress: complete]
 
-### Learning React Native: Building Native Mobile Apps with JavaScript
+### Learning React Native: Building Native Mobile Apps with JavaScript (2015) (Bonnie Eisenman)
 * [progress: 1 from 100+]
+* [progress: 90 from 432]
 
 ### Основы разработки веб-приложений (2015) (Пьюривал Сэмми)
 * [progress: 272 from 272]
