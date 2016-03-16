@@ -121,6 +121,7 @@
 
 ### Ember.js Web Development with Ember CLI (2015) (Suchit Puri)
 * [progress: 1 from 100+]
+* [progress: 41 from 100+]
 
 ### PHP. Рецепты программирования (2015) (Дэвид Скляр, Адам Трахтенберг)
 * [progress: 145 from 700+]
