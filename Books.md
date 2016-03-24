@@ -113,6 +113,9 @@
 * [progress: 99 from 141]
 * [progress: complete]
 
+### Mastering React (2016) (Adam Horton, Ryan Vice)
+* [progress: 1 from 100+]
+
 ### Learning React Native: Building Native Mobile Apps with JavaScript (2015) (Bonnie Eisenman)
 * [progress: 1 from 100+]
 * [progress: 90 from 432]
