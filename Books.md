@@ -101,6 +101,7 @@
 * [progress: 1 from 100+]
 * [progress: 65 from 100+]
 * [progress: 79 from 100+]
+* [progress: 143 from 100+]
 
 ### React.js Essentials (2015) (Artemij Fedosejev)
 * [progress: 1 from 100+]
