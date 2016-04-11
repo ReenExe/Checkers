@@ -129,6 +129,7 @@
 * [progress: 90 from 432]
 * [progress: 151 from 432]
 * [progress: 155 from 432]
+* [progress: 176 from 432]
 
 ### Основы разработки веб-приложений (2015) (Пьюривал Сэмми)
 * [progress: 272 from 272]
