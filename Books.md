@@ -135,6 +135,9 @@
 * [progress: 155 from 432]
 * [progress: 176 from 432]
 
+### React Native for iOS Development (2015) (Abhishek Nalwaya, Akshat Paul)
+* [progress: 1 from 100+]
+
 ### Основы разработки веб-приложений (2015) (Пьюривал Сэмми)
 * [progress: 272 from 272]
 * [progress: complete]
