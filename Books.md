@@ -128,6 +128,9 @@
 * [progress: 205 from 254]
 * [progress: complete]
 
+### ReactJS by Example – Building Modern Web Applications with React (2016) (Prathamesh Sonpatki, Vipul A M)
+* [progress: 70 from 280]
+
 ### Learning React Native: Building Native Mobile Apps with JavaScript (2015) (Bonnie Eisenman)
 * [progress: 1 from 100+]
 * [progress: 90 from 432]
