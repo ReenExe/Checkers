@@ -133,6 +133,7 @@
 
 ### Jasmine JavaScript Testing (2015) (Paulo Ragonha)
 * [progress: 54 from 134]
+* [progress: complete]
 
 ### Learning React Native: Building Native Mobile Apps with JavaScript (2015) (Bonnie Eisenman)
 * [progress: 1 from 100+]
