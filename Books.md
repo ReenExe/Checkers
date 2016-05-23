@@ -148,6 +148,7 @@
 
 ### Learning Swift (2016) (Jon Manning, Paris Buttfield-Addison, Tim Nugent)
 * [progress: 88 from 534]
+* [progress: 98 from 534]
 
 ### Основы разработки веб-приложений (2015) (Пьюривал Сэмми)
 * [progress: 272 from 272]
