@@ -147,6 +147,7 @@
 * [progress: 81 from 179]
 * [progress: 105 from 179]
 * [progress: 150 from 179]
+* [progress: complete]
 
 ### Learning Swift (2016) (Jon Manning, Paris Buttfield-Addison, Tim Nugent)
 * [progress: 88 from 534]
