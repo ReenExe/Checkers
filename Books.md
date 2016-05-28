@@ -149,6 +149,13 @@
 * [progress: 150 from 179]
 * [progress: complete]
 
+### JavaScript with Promises (2015) (Daniel Parker)
+* [progress: 45 from 94]
+
+### Mastering JavaScript Promises (2015) (Muzzamil Hussain)
+
+### Mastering JavaScript High Performance (2015) (Chad R. Adams)
+
 ### Learning Swift (2016) (Jon Manning, Paris Buttfield-Addison, Tim Nugent)
 * [progress: 88 from 534]
 * [progress: 98 from 534]
