@@ -158,6 +158,7 @@
 
 ### Lo-Dash Essentials (2015) (Adam Boduch)
 * [progress: 68 from 232]
+* [progress: 105 from 232]
 
 ### Learning Swift (2016) (Jon Manning, Paris Buttfield-Addison, Tim Nugent)
 * [progress: 88 from 534]
