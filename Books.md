@@ -130,6 +130,7 @@
 
 ### ReactJS by Example – Building Modern Web Applications with React (2016) (Prathamesh Sonpatki, Vipul A M)
 * [progress: 70 from 280]
+* [progress: 115 from 280]
 
 ### Jasmine JavaScript Testing (2015) (Paulo Ragonha)
 * [progress: 54 from 134]
@@ -161,6 +162,7 @@
 * [progress: 105 from 232]
 * [progress: 125 from 232]
 * [progress: 155 from 232]
+* [progress: complete]
 
 ### Learning Swift (2016) (Jon Manning, Paris Buttfield-Addison, Tim Nugent)
 * [progress: 88 from 534]
