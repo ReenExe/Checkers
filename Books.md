@@ -131,6 +131,7 @@
 ### ReactJS by Example – Building Modern Web Applications with React (2016) (Prathamesh Sonpatki, Vipul A M)
 * [progress: 70 from 280]
 * [progress: 115 from 280]
+* [progress: 170 from 280]
 
 ### Jasmine JavaScript Testing (2015) (Paulo Ragonha)
 * [progress: 54 from 134]
