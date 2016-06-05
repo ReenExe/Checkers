@@ -132,6 +132,7 @@
 * [progress: 70 from 280]
 * [progress: 115 from 280]
 * [progress: 170 from 280]
+* [progress: complete]
 
 ### Jasmine JavaScript Testing (2015) (Paulo Ragonha)
 * [progress: 54 from 134]
