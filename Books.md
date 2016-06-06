@@ -154,6 +154,7 @@
 
 ### JavaScript with Promises (2015) (Daniel Parker)
 * [progress: 45 from 94]
+* [progress: complete]
 
 ### Mastering JavaScript Promises (2015) (Muzzamil Hussain)
 
