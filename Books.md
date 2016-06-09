@@ -153,6 +153,9 @@
 * [progress: 150 from 179]
 * [progress: complete]
 
+### Learning React Native (2015) (Bonnie Eisenman)
+* [progress: 1 from 200]
+
 ### JavaScript with Promises (2015) (Daniel Parker)
 * [progress: 45 from 94]
 * [progress: complete]
