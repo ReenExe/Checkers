@@ -153,8 +153,9 @@
 * [progress: 150 from 179]
 * [progress: complete]
 
-### Learning React Native (2015) (Bonnie Eisenman)
-* [progress: 1 from 200]
+### Getting Started with React Native (2015) (Ethan Holmes, Tom Bray)
+* [progress: 1 from 172]
+* [progress: 60 from 172]
 
 ### JavaScript with Promises (2015) (Daniel Parker)
 * [progress: 45 from 94]
