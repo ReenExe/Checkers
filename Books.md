@@ -82,7 +82,8 @@
 ### Командная строка Linux и автоматизация рутинных задач (2012) (Денис Колисниченко)
 * [progress: 125 from 352]
 * [progress: 172 from 352]
-* [progress: 189 from 352] 
+* [progress: 189 from 352]
+* [progress: complete]
 
 ### JavaScript для профессиональных веб-разработчиков (2015) (Николас Закас)
 * [progress: 111 from 960]
@@ -190,6 +191,10 @@
 * [progress: 1 from 100+]
 * [progress: 41 from 100+]
 * [progress: 65 from 174]
+
+### Getting Started with Phalcon (2014) (Stephan Miller)
+* [progress: 3 from 138]
+* [progress: complete]
 
 ### PHP. Рецепты программирования (2015) (Дэвид Скляр, Адам Трахтенберг)
 * [progress: 145 from 700+]
