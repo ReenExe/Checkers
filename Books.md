@@ -85,6 +85,10 @@
 * [progress: 189 from 352]
 * [progress: complete]
 
+### Ubuntu для всех (2011) (Робин Никсон)
+* [progress: 3 from 459]
+* [progress: complete]
+
 ### JavaScript для профессиональных веб-разработчиков (2015) (Николас Закас)
 * [progress: 111 from 960]
 * [progress: 145 from 960]
