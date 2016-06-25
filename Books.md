@@ -78,12 +78,14 @@
 * [progress: 65 from 146]
 * [progress: complete]
 
-
 ### Командная строка Linux и автоматизация рутинных задач (2012) (Денис Колисниченко)
 * [progress: 125 from 352]
 * [progress: 172 from 352]
 * [progress: 189 from 352]
 * [progress: complete]
+
+### Bash Pocket Reference (2016) (Arnold Robbins)
+* [progress: 125 from 160]
 
 ### Ubuntu для всех (2011) (Робин Никсон)
 * [progress: 3 from 459]
