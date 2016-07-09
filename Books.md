@@ -226,6 +226,8 @@
 * [progress: 125 from 300+]
 * [progress: 146 from 300+]
 
+* [progress: 201 from 300+]
+
 ###  NoSQL. Новая методология разработки нереляционных баз данных (2013) (Мартин Фаулер)
 * [progress: 14 from 172]
 * [progress: 43 from 172]
