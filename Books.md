@@ -231,6 +231,7 @@
 ### Язык программирования Go (2016) (Alan Donovan, Brian Kernighan)
 * [progress: 43 from 436]
 * [progress: 55 from 436]
+* [progress: 80 from 436]
 
 ###  NoSQL. Новая методология разработки нереляционных баз данных (2013) (Мартин Фаулер)
 * [progress: 14 from 172]
