@@ -233,6 +233,9 @@
 * [progress: 55 from 436]
 * [progress: 80 from 436]
 
+### The Rust Programming Language (на русском)
+* [progress: 25 from 300+]
+
 ###  NoSQL. Новая методология разработки нереляционных баз данных (2013) (Мартин Фаулер)
 * [progress: 14 from 172]
 * [progress: 43 from 172]
