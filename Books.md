@@ -272,6 +272,9 @@
 * [progress: 386 from 486]
 * [progress: complete]
 
+### The Ruby Programming Language (David Flanagan, Yukihiro Matsumoto) (2011)
+* [progress: 53 from 100+]
+
 ### Компьютерные сети (Эндрю Таненбаум, Дэвид Уэзеролл) (2012)
 
 ### Изучаем Spark. Молниеносный анализ данных
