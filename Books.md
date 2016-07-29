@@ -275,6 +275,7 @@
 ### The Ruby Programming Language (David Flanagan, Yukihiro Matsumoto) (2011)
 * [progress: 53 from 100+]
 * [progress: 75 from 100+]
+* [progress: 90 from 100+]
 
 ### Компьютерные сети (Эндрю Таненбаум, Дэвид Уэзеролл) (2012)
 
