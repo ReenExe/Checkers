@@ -285,6 +285,7 @@
 * [progress: 277 from 300+]
 * [progress: 350 from 400+]
 * [progress: 369 from 400+]
+* [progress: 455 from 494]
 
 ### Объектно-ориентированный анализ и проектирование
 * [progress: 81 from 100+]
