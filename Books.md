@@ -293,6 +293,7 @@
 * [progress: 105 from 200+]
 * [progress: 157 from 200+]
 * [progress: 320 from 600+]
+* [progress: finish, so many `water`]
 
 ### Компьютерные сети (Эндрю Таненбаум, Дэвид Уэзеролл) (2012)
 
