@@ -288,6 +288,9 @@
 * [progress: 455 from 494]
 * [progress: complete]
 
+### Understanding SQL (Martin Gruber)
+* [progress: 87 from 383]
+
 ### Объектно-ориентированный анализ и проектирование
 * [progress: 81 from 100+]
 * [progress: 105 from 200+]
