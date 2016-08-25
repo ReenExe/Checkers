@@ -227,6 +227,7 @@
 * [progress: 146 from 300+]
 
 * [progress: 201 from 300+]
+* [progress: 235 from 300+]
 
 ### Язык программирования Go (2016) (Alan Donovan, Brian Kernighan)
 * [progress: 43 from 436]
