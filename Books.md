@@ -235,6 +235,7 @@
 * [progress: 80 from 436]
 * [progress: 87 from 436]
 * [progress: 103 from 436]
+* [progress: 114 from 436]
 
 ### The Rust Programming Language (на русском)
 * [progress: 25 from 300+]
