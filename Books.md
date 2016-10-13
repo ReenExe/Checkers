@@ -312,6 +312,9 @@
 * [progress: 320 from 600+]
 * [progress: finish, so many `water`]
 
+### PHP 7 Programming Blueprints (Jose Palala, Martin Helmich) [2016]
+* [progress: complete]
+
 ### Компьютерные сети (Эндрю Таненбаум, Дэвид Уэзеролл) (2012)
 * [progress: 45 from 900+]
 * [progress: 82 from 900+]
