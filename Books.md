@@ -296,6 +296,10 @@
 * [progress: 455 from 494]
 * [progress: complete]
 
+### Extending Symfony2 Web Application Framework (Sébastien Armand) [2014]
+* [progress: 17 from 140]
+* [progress: complete]
+
 ### Understanding SQL (Martin Gruber)
 * [progress: 87 from 383]
 * [progress: 107 from 383]
