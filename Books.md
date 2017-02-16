@@ -319,8 +319,11 @@
 ### PHP 7 Programming Blueprints (Jose Palala, Martin Helmich) [2016]
 * [progress: complete]
 
-# Learning PHP 7 High Performance (Altaf Hussain) [2016]
+### Learning PHP 7 High Performance (Altaf Hussain) [2016]
 * [progress: 17 from 202]
+* [progress: complete]
+
+### A Year With Symfony (Matthias Noback) [2016]
 * [progress: complete]
 
 ### Компьютерные сети (Эндрю Таненбаум, Дэвид Уэзеролл) (2012)
